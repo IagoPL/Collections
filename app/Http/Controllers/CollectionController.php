@@ -45,10 +45,10 @@ class CollectionController extends Controller
         //Buscar usando  método where
         echo $customer->where('name', 'Janifer')."<br/>";
 
-        //Sort the collection data based on author name
+        //ordenar segun el nombre
         $sortedCustomer = $customer->sortBy('author');
 
-        //dump the variable content in the browser
+        //volcar el contenido en el buscador
         dd($sortedCustomer->values()->toArray());
     }
 }
